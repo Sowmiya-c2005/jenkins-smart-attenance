@@ -1,19 +1,37 @@
-function markPresent() {
+function addPresent() {
     let name = document.getElementById("name").value;
+
     if(name === "") {
         alert("Enter student name");
         return;
     }
-    document.getElementById("status").innerHTML = name + " is Present ✔";
-    document.getElementById("status").style.color = "green";
+
+    let list = document.getElementById("list");
+
+    let item = document.createElement("li");
+    item.innerHTML = name + " - Present ✔";
+    item.style.color = "green";
+
+    list.appendChild(item);
+
+    document.getElementById("name").value = "";
 }
 
-function markAbsent() {
+function addAbsent() {
     let name = document.getElementById("name").value;
+
     if(name === "") {
         alert("Enter student name");
         return;
     }
-    document.getElementById("status").innerHTML = name + " is Absent ❌";
-    document.getElementById("status").style.color = "red";
+
+    let list = document.getElementById("list");
+
+    let item = document.createElement("li");
+    item.innerHTML = name + " - Absent ❌";
+    item.style.color = "red";
+
+    list.appendChild(item);
+
+    document.getElementById("name").value = "";
 }

@@ -13,16 +13,16 @@
 
     <div class="card">
 
-        <h2>Student Attendance</h2>
-
         <input type="text" id="name" placeholder="Enter Student Name">
 
         <div class="buttons">
-            <button class="present" onclick="markPresent()">Present ✔</button>
-            <button class="absent" onclick="markAbsent()">Absent ❌</button>
+            <button class="present" onclick="addPresent()">Mark Present ✔</button>
+            <button class="absent" onclick="addAbsent()">Mark Absent ❌</button>
         </div>
 
-        <h3 id="status">Status: Waiting...</h3>
+        <h3>Attendance List</h3>
+
+        <ul id="list"></ul>
 
     </div>
 
