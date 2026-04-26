@@ -4,34 +4,31 @@
     <title>Smart Attendance System</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>📋 Smart Attendance System - UPDATED</h1>
+<div class="container">
 
-    <table>
-        <tr>
-            <th>Student Name</th>
-            <th>Status</th>
-        </tr>
+    <h1>🎓 Smart Attendance System</h1>
 
-        <tr>
-            <td>Arun</td>
-            <td><button onclick="mark(this)">Mark Attendance</button></td>
-        </tr>
+    <div class="card">
 
-        <tr>
-            <td>Divya</td>
-            <td><button onclick="mark(this)">Mark Attendance</button></td>
-        </tr>
+        <h2>Student Attendance</h2>
 
-        <tr>
-            <td>Kumar</td>
-            <td><button onclick="mark(this)">Mark Attendance</button></td>
-        </tr>
+        <input type="text" id="name" placeholder="Enter Student Name">
 
-    </table>
+        <div class="buttons">
+            <button class="present" onclick="markPresent()">Present ✔</button>
+            <button class="absent" onclick="markAbsent()">Absent ❌</button>
+        </div>
 
-    <script src="script.js"></script>
+        <h3 id="status">Status: Waiting...</h3>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
